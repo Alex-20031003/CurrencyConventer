@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Currency Conveter</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+
+        <form class="form">
+            <div class="form-inputs">
+                <label for="amount" class="form-label-amount">Amount</label>
+                <input type="number" name="amount" id="amount" class="form-amount input" placeholder="Enter value" required>
+
+                <label for="from" class="form-label-from">From</label>
+                <select name="from" id="from" class="form-select-from input" required>
+                <option selected disabled>Choose value</option>
+                </select>
+
+                <div class="form-change">
+                    <img src="./image/arrows.svg" alt="refresh" class="form-change__img" />
+                </div>
+
+                <label for="to" class="form-label-to">To</label>
+                <select name="to" id="to" class="form-select-to input" required>
+                <option selected disabled>Choose value</option>
+                </select>
+            </div>
+
+            <div class="form-button">
+                <button type="submit">Convert</button>
+            </div>
+        </form>
+
+        <div class="result">
+            <div class="result-box">
+                <div class="box-title">EUR</div>
+
+                <div class="box-value">0</div>
+            </div>
+
+            <div class="box-equal">=</div>
+
+            <div class="result-box">
+                <div class="box-title">USD</div>
+
+                <div class="box-value">0</div>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info-values"><span id="main-currency">1 USD</span> = <span id="secondary-currency">0.95949 EUR</span></div>
+
+            <div class="info-last-update">20 Semptember 2024</div>
+        </div>
+    </div>
+    
+
+
+    
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
